@@ -12,6 +12,12 @@ Every member of the Akron Code Club who particpates in this course, and every me
 uses the materials in this repository, is expected to adhere to the [edX honor code](https://www.edx.org/edx-terms-service).
 Our goal is to help one another learn and grow as programmers, not undermine the excellent work being done by edX.
 
+## About Haskell
+
+* Installation instructions can be found at the [Haskell Platform](https://www.haskell.org/platform/) site
+* For all other things Haskell check out [HaskellWiki](https://www.haskell.org/haskellwiki/Haskell)
+* And the definitive book, [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/), is available free online
+
 ## License and Copyright
 
 All source code in this repository is Copyright &copy; 2014 [Akron Code Club](https://twitter.com/AkronCodeClub).
