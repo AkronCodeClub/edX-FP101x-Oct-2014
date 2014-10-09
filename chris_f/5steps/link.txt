@@ -1,0 +1,1 @@
+http://www.haskell.org/haskellwiki/Haskell_in_5_steps
