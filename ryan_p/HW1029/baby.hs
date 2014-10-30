@@ -33,4 +33,14 @@ gqsort (x :xs)
   where smaller = [a | a <- xs, a <= x]
         larger = [b | b <- xs, b > x]
 		
-		
+second xs = head (tail xs)
+
+swap (a,b) = (b,a)
+
+pair x y = (x, y)
+
+palindrome xs = reverse xs == xs
+
+twice f x = f (f x)
+
+f xs = take 3 (reverse xs)
