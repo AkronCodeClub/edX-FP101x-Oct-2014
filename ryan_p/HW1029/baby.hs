@@ -44,3 +44,5 @@ palindrome xs = reverse xs == xs
 twice f x = f (f x)
 
 f xs = take 3 (reverse xs)
+
+factors n = [x | x <- [1..n], n `mod` x == 0]
