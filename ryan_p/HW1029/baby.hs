@@ -1,3 +1,4 @@
+
 double x = x + x
 qsort [] = []
 qsort (x : xs) = qsort smaller ++ [x] ++ qsort larger
@@ -127,4 +128,29 @@ remove4 n xs = take n xs ++ drop (n + 1) xs
 
 exercise8 :: Int -> [a] -> [a]
 exercise8 x xs = take (x + 1) xs ++ drop x xs
+
+perfects2 n = [x | x <- [1 .. n], isPerfect x]
+  where isPerfect num = sum (init (factors num)) == num
+  
+e4 = [(x,y) | x <- [1,2,3], y <- [4,5,6]]
+
+find :: (Eq a) => a -> [(a,b)] -> [b]
+find k t = [v | (k', v) <- t, k == k']
+
+positions :: (Eq a) => a -> [a] -> [Int]
+positions x xs = [i | (x', i) <- zip xs [0..n], x == x']
+  where n = length xs - 1
+
+positions1 :: (Eq a) => a -> [a] -> [Int]
+positions1 x xs = find x (zip xs [0..n])
+  where n = length xs - 1
+
+scalarproduct :: [Int] -> [Int] -> Int
+scalarproduct xs ys = sum (product [(x,y) | x <- xs, y <- ys])
+
+
+
+  
+
+  
 
