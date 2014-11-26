@@ -145,10 +145,37 @@ positions1 :: (Eq a) => a -> [a] -> [Int]
 positions1 x xs = find x (zip xs [0..n])
   where n = length xs - 1
 
-scalarproduct :: [Int] -> [Int] -> Int
-scalarproduct xs ys = sum (product [(x,y) | x <- xs, y <- ys])
+--scalarproduct :: [Int] -> [Int] -> Int
+--scalarproduct xs ys = sum (product [(x,y) | x <- xs, y <- ys])
+
+init1 :: [a] -> [a]
+init1 [_] =[]
+init1 (x : xs) = x : init1 xs
+
+and1 :: [Bool] -> Bool
+and1 [] = True
+and1 (b : bs)
+  | b = b
+  | otherwise = and1 bs
+  
+--concat1 :: [[a]] -> [a]
+--concat1 [] = []
+--concat1 (xs : xss) = xs : concat1 xss
+
+concat2 :: [[a]] -> [a]
+concat2 [] = []
+concat2 (xs : xss) = xs ++ concat2 xss
+
+--concat3 :: [[a]] -> [a]
+--concat3 [] = [[]]
+--concat3 (xs : xss) = xs ++ concat3 xss
+
+concat4 :: [[a]] -> [a]
+concat4 [[]] = []
+concat4 (xs: xss) = xs ++ concat4 xss
 
 
+  
 
   
 
