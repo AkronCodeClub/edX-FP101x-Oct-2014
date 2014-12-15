@@ -1,5 +1,7 @@
 # edX FP101x "Introduction to Functional Programming"
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AkronCodeClub/edX-FP101x-Oct-2014?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 In October of 2014 the Akron Code Club formed a study group around the [edX](https://www.edx.org/) course
 [FP101x "Introduction to Functional Programming"](https://www.edx.org/course/delftx/delftx-fp101x-introduction-functional-2126).
 This course was offered through [Delft University of Technology, Netherlands (DelftX)](https://www.edx.org/school/delftx).
